@@ -16,6 +16,18 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
+    <!-- EmailJS code start here -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ecyqgWRvipLQ0S4ln",
+            });
+        })();
+    </script>
+    <!-- EmailJS code ends here -->
+    <script src="script.js"></script>
 </head>
 
 <body class="make-black">
@@ -74,21 +86,25 @@
                     <div class="row">
                         <!-- profile links and other button-->
                         <div class="icon-container">
-                            <a href="https://www.linkedin.com" target="" class="icon linkedin">
+                            <a href="https://www.linkedin.com/in/om-hujband-54b4b6279 " target="" class="icon linkedin">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="https://github.com" target="" class="icon github">
+                            <a href="https://github.com/omhujband" target="" class="icon github">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://github.com" target="" class="icon instagram">
+                            <a href="https://www.instagram.com/_om9306_" target="" class="icon instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
 
                         <div class="button-group" style="margin-top: 2rem;">
-                            <button class="btn-home">Hire Me</button>
-                            <button class="btn-home">Contact Me</button>
-                            <button class="btn-home">Download CV</button>
+                            <button onclick="window.open('https://www.linkedin.com/in/om-hujband-54b4b6279')"
+                                class="btn-home">Hire Me</button>
+                            <button onclick="window.open('https://wa.me/7400250320?')" class="btn-home">Contact
+                                Me</button>
+                            <button
+                                onclick="window.open('https://drive.google.com/file/d/1SWxALy2MtRbtAMrzagQYSAZwb5SZ36cM/view?usp=sharing')"
+                                class="btn-home">Download CV</button>
                         </div>
 
                     </div>
@@ -105,7 +121,7 @@
     </div>
     <!-- Home body ended -->
 
-    
+
     <!-- Education body started-->
     <div class="container new-section" id="portfolio-education">
         <div class="row">
@@ -151,7 +167,7 @@
     </div>
     <!-- Education body ended-->
 
-     
+
     <!-- Projects body started-->
     <div class="container new-section" id="portfolio-projects">
         <div class="row">
@@ -166,12 +182,11 @@
                         Designed a second separate version that works more efficiently than the prior one.</p>
                     <div class="container">
                         <div class="row" style="margin-top: 7rem;">
-                            <div class="col">
-                                <a href="#" class="btn btn-primary">Live Preview</a>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6 btn-single">
+                                <a href="https://github.com/omhujband/Currency-Converter.git" class="btn btn-primary">Source Code</a>
                             </div>
-                            <div class="col">
-                                <a href="#" class="btn btn-primary">Source Code</a>
-                            </div>
+                            <div class="col-lg-3"></div>
                         </div>
                     </div>
                 </div>
@@ -186,7 +201,7 @@
                         <div class="row" style="margin-top: 7rem;">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-6 btn-single">
-                                <a href="#" class="btn btn-primary">Source Code</a>
+                                <a href="https://github.com/omhujband/upstudy.git" class="btn btn-primary">Source Code</a>
                             </div>
                             <div class="col-lg-3"></div>
                         </div>
@@ -202,10 +217,10 @@
                     <div class="container">
                         <div class="row" style="margin-top: 6rem;">
                             <div class="col">
-                                <a href="#" class="btn btn-primary">Live Preview</a>
+                                <a href="https://omhujband.github.io/To-Do-List/" class="btn btn-primary">Live Preview</a>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-primary">Source Code</a>
+                                <a href="https://github.com/omhujband/To-Do-List.git" class="btn btn-primary">Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +230,7 @@
     </div>
     <!-- Projects body ended-->
 
-    
+
     <!-- Contact me body started-->
     <div class="container new-section" id="portfolio-contact" style="margin-bottom: 5rem;">
         <div class="row">
@@ -223,16 +238,16 @@
         </div>
         <div class="row">
             <div class="contact-container">
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-left">
-                        <input type="text" placeholder="Full name" class="input-field" required>
-                        <input type="email" placeholder="Email" class="input-field" required>
-                        <input type="tel" placeholder="Phone Number" class="input-field" required>
-                        <input type="text" placeholder="Subject" class="input-field" required>
+                        <input type="text" placeholder="Full name" id="FullName" class="input-field" required>
+                        <input type="email" placeholder="Email" id="Email" class="input-field" required>
+                        <input type="tel" placeholder="+91 Phone Number" id="PhoneNo" class="input-field" required>
+                        <input type="text" placeholder="Subject" id="Subject" class="input-field" required>
                     </div>
                     <div class="form-right">
-                        <textarea placeholder="Your Message" class="textarea-field"></textarea>
-                        <button type="submit" class="send-button">Send Message</button>
+                        <textarea placeholder="Your Message" id="Message" class="textarea-field"></textarea>
+                        <button type="submit" class="send-button" onclick="sendMail()">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -240,9 +255,11 @@
     </div>
     <!-- Contact me body ended-->
 
-     
-    <!-- footer begins-->
 
+    <!-- footer begins-->
+    <button id="scrollToTopBtn" class="scroll-to-top" onclick="topFunction()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- footer ends-->
 
 </body>

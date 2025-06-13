@@ -401,3 +401,31 @@ hr {
 .project-access-btn {
     margin-top: 5rem;
 }
+
+/* Scroll to Top Button Styling */
+.scroll-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position on the screen */
+    bottom: 30px; /* 30px from the bottom */
+    right: 30px; /* 30px from the right */
+    background-color: #FFD700; /* Yellow background */
+    color: #000; /* Black icon color */
+    border: none; /* No border */
+    border-radius: 50%; /* Make it perfectly circular */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    font-size: 24px; /* Icon size */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); /* Subtle yellow shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.scroll-to-top:hover {
+    background-color: #FFFF00; /* Brighter yellow on hover */
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.6); /* Enhanced yellow glow */
+    transform: translateY(-3px); /* Slightly lift button on hover */
+}

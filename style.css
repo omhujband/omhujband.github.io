@@ -358,39 +358,60 @@ hr {
 
 /* Styling for the home section buttons */
 .button-group {
-    display: flex; /* Arranges buttons in a row */
-    gap: 15px; /* Adds space between buttons */
-    margin-top: 2rem; /* Adds top margin as per HTML */
-    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    display: flex;
+    /* Arranges buttons in a row */
+    gap: 15px;
+    /* Adds space between buttons */
+    margin-top: 2rem;
+    /* Adds top margin as per HTML */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on smaller screens */
 }
 
 .btn-home {
-    background-color: #FFD700; /* Yellow background color */
-    color: #000; /* Black text color */
-    border: none; /* No border */
-    border-radius: 25px; /* Polished, rounded edges */
-    padding: 12px 25px; /* Padding inside the button */
-    font-size: 1.1em; /* Slightly larger font size */
-    font-weight: 600; /* Bold text */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); /* Subtle yellow shadow */
+    background-color: #FFD700;
+    /* Yellow background color */
+    color: #000;
+    /* Black text color */
+    border: none;
+    /* No border */
+    border-radius: 25px;
+    /* Polished, rounded edges */
+    padding: 12px 25px;
+    /* Padding inside the button */
+    font-size: 1.1em;
+    /* Slightly larger font size */
+    font-weight: 600;
+    /* Bold text */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for all properties */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    /* Subtle yellow shadow */
 }
 
 .btn-home:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.6); /* Enhanced yellow glow */
-    transform: translateY(-3px); /* Slightly lift button on hover */
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.6);
+    /* Enhanced yellow glow */
+    transform: translateY(-3px);
+    /* Slightly lift button on hover */
 }
 
 /* Optional: Add responsiveness for very small screens if needed */
 @media (max-width: 480px) {
     .button-group {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center stacked buttons */
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center stacked buttons */
     }
+
     .btn-home {
-        width: 100%; /* Make buttons full width when stacked */
-        max-width: 250px; /* Max width for stacked buttons */
+        width: 100%;
+        /* Make buttons full width when stacked */
+        max-width: 250px;
+        /* Max width for stacked buttons */
     }
 }
 
@@ -404,28 +425,211 @@ hr {
 
 /* Scroll to Top Button Styling */
 .scroll-to-top {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed position on the screen */
-    bottom: 30px; /* 30px from the bottom */
-    right: 30px; /* 30px from the right */
-    background-color: #FFD700; /* Yellow background */
-    color: #000; /* Black icon color */
-    border: none; /* No border */
-    border-radius: 50%; /* Make it perfectly circular */
-    width: 50px; /* Fixed width */
-    height: 50px; /* Fixed height */
-    font-size: 24px; /* Icon size */
-    display: flex; /* Use flexbox for centering content */
-    align-items: center; /* Center icon vertically */
-    justify-content: center; /* Center icon horizontally */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); /* Subtle yellow shadow */
-    transition: all 0.3s ease-in-out; /* Smooth transitions */
-    z-index: 1000; /* Ensure it stays on top of other content */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed position on the screen */
+    bottom: 30px;
+    /* 30px from the bottom */
+    right: 30px;
+    /* 30px from the right */
+    background-color: #FFD700;
+    /* Yellow background */
+    color: #000;
+    /* Black icon color */
+    border: none;
+    /* No border */
+    border-radius: 50%;
+    /* Make it perfectly circular */
+    width: 50px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
+    font-size: 24px;
+    /* Icon size */
+    display: flex;
+    /* Use flexbox for centering content */
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    /* Subtle yellow shadow */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transitions */
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
 }
 
 .scroll-to-top:hover {
-    background-color: #FFFF00; /* Brighter yellow on hover */
-    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.6); /* Enhanced yellow glow */
-    transform: translateY(-3px); /* Slightly lift button on hover */
+    background-color: #FFFF00;
+    /* Brighter yellow on hover */
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.6);
+    /* Enhanced yellow glow */
+    transform: translateY(-3px);
+    /* Slightly lift button on hover */
+}
+
+/* new code below this  */
+
+/* Dark Grey Carousel Container */
+.dark-carousel-container {
+    background-color: #2a2a2a; /* Dark grey */
+    padding: 30px 10px 70px 10px; /* Added bottom padding for buttons */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3); /* Yellow shadow */
+    border: 2px solid #FFD700; /* Yellow border */
+    margin: 0 auto;
+    max-width: 1200px;
+    max-height: 450px;
+    position: relative; /* For absolute positioning of controls */
+}
+
+/* Carousel Wrapper */
+#projectCarousel {
+    position: relative;
+    padding-bottom: 60px; /* Space for controls at bottom */
+}
+
+/* Project Cards Styling */
+#portfolio-projects .card {
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #FFD700 !important; /* Yellow border */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+    min-height: 320px; /* Uniform card height */
+    background-color: #1a1a1a !important; /* Dark card background */
+    transition: all 0.3s ease;
+}
+
+#portfolio-projects .card:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Card Body Flexbox */
+#portfolio-projects .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Title */
+#portfolio-projects .card-title {
+    color: #fff !important;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#portfolio-projects .card-title span {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Card Text */
+#portfolio-projects .card-text {
+    color: #ddd !important;
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Buttons */
+#portfolio-projects .btn-primary {
+    background-color: #FFD700 !important;
+    border-color: #FFD700 !important;
+    color: #000 !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#portfolio-projects .btn-primary:hover {
+    background-color: #FFFF00 !important;
+    border-color: #FFFF00 !important;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+    transform: scale(1.05);
+}
+
+/* Carousel Controls - Positioned at Bottom */
+#projectCarousel .carousel-control-prev,
+#projectCarousel .carousel-control-next {
+    position: absolute;
+    bottom: 0; /* Position at bottom */
+    top: auto; /* Override default top positioning */
+    width: auto; /* Don't span full width */
+    height: 50px; /* Fixed height for button area */
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectCarousel .carousel-control-prev {
+    left: 35%; /* Position left button */
+}
+
+#projectCarousel .carousel-control-next {
+    right: 35%; /* Position right button */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FFD700;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-size: 20px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+#projectCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#projectCarousel .carousel-control-next:hover .carousel-control-next-icon {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    transform: scale(1.15);
+    background-color: #FFFF00;
+}
+
+/* Smooth Carousel Transitions */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Responsive spacing for cards on small screens */
+@media (max-width: 768px) {
+    #portfolio-projects .card {
+        margin-bottom: 20px;
+    }
+    
+    .dark-carousel-container {
+        padding: 20px 5px 70px 5px;
+    }
+    
+    .carousel-inner {
+        padding-bottom: 20px;
+    }
+    
+    /* Adjust button positions for mobile */
+    #projectCarousel .carousel-control-prev {
+        left: 20%;
+    }
+    
+    #projectCarousel .carousel-control-next {
+        right: 20%;
+    }
+}
+
+/* Medium screens adjustments */
+@media (max-width: 992px) {
+    .dark-carousel-container {
+        max-width: 95%;
+    }
+    
+    #projectCarousel .carousel-control-prev {
+        left: 25%;
+    }
+    
+    #projectCarousel .carousel-control-next {
+        right: 25%;
+    }
 }

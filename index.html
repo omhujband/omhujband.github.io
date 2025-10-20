@@ -103,7 +103,7 @@
                             <button onclick="window.open('https://wa.me/7400250320?')" class="btn-home">Contact
                                 Me</button>
                             <button
-                                onclick="window.open('https://drive.google.com/file/d/1SWxALy2MtRbtAMrzagQYSAZwb5SZ36cM/view?usp=sharing')"
+                                onclick="window.open('https://drive.google.com/file/d/1PO7KL2LtuzzG8rs_4QAHNWrJmSVwBTrR/view?usp=sharing')"
                                 class="btn-home">Download CV</button>
                         </div>
 
@@ -114,7 +114,7 @@
                 <!-- this is the right side of home page for image/profile photo-->
                 <!-- Added a div wrapper for the profile photo to apply border and shadow effects -->
                 <div class="profile-photo-wrapper">
-                    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                    <img src="profile-photo.png" alt="Profile Photo" class="profile-photo">
                 </div>
             </div>
         </div>
@@ -173,59 +173,138 @@
         <div class="row">
             <h2 class="display-title">Projects</h2>
         </div>
-        <div class="row justify-content-md-center" style="margin-top: 30px;">
-            <div class="card" style="width: 22rem; height: 25rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>Currency Converter</span></h5>
-                    <p class="card-text">Created an app that can convert between various currencies using different
-                        conditional logics.
-                        Designed a second separate version that works more efficiently than the prior one.</p>
-                    <div class="container">
-                        <div class="row" style="margin-top: 7rem;">
-                            <div class="col-lg-3"></div>
-                            <div class="col-lg-6 btn-single">
-                                <a href="https://github.com/omhujband/Currency-Converter.git" class="btn btn-primary">Source Code</a>
+
+        <!-- Dark Grey Carousel Container -->
+        <div class="dark-carousel-container">
+            <!-- Bootstrap Carousel Component -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Carousel Items Wrapper -->
+                <div class="carousel-inner">
+
+                    <!-- First carousel screen with 3 cards -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <!-- Project 1: Currency Converter -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card p-3 h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><span>Currency Converter</span></h5>
+                                        <p class="card-text flex-grow-1">
+                                            Created an app that can convert between various currencies using different
+                                            conditional logics. Designed a second separate version that works more
+                                            efficiently than the prior one.
+                                        </p>
+                                        <div class="mt-auto text-end">
+                                            <a href="https://github.com/omhujband/Currency-Converter.git"
+                                                class="btn btn-primary" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-3"></div>
+
+                            <!-- Project 2: UPSTUDY Platform (Hidden on mobile) -->
+                            <div class="col-md-4 mb-4 d-none d-md-block">
+                                <div class="card p-3 h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><span>UPSTUDY Platform</span></h5>
+                                        <p class="card-text flex-grow-1">
+                                            Created a web application using a template to understand the functioning of
+                                            full-stack products. Enabled any user to contact and access the courses
+                                            using PHP/MySQL framework.
+                                        </p>
+                                        <div class="mt-auto text-end">
+                                            <a href="https://github.com/omhujband/upstudy.git" class="btn btn-primary"
+                                                target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3: Todo List (Hidden on mobile) -->
+                            <div class="col-md-4 mb-4 d-none d-md-block">
+                                <div class="card p-3 h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><span>Todo List</span></h5>
+                                        <p class="card-text flex-grow-1">
+                                            My Productivity App is a simple web application designed to help users stay
+                                            organized. Features a To-Do List for task management and a Notepad for
+                                            writing down quick notes.
+                                        </p>
+                                        <div class="mt-auto text-end">
+                                            <a href="https://omhujband.github.io/To-Do-List/"
+                                                class="btn btn-primary btn-sm me-2" target="_blank">Live Preview</a>
+                                            <a href="https://github.com/omhujband/To-Do-List.git"
+                                                class="btn btn-primary btn-sm" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card justify-content-lg-center" style="width: 22rem; height: 25rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>UPSTUDY Platform</span></h5>
-                    <p class="card-text">Created a web application using a template to understand the functioning of
-                        full-stack products.
-                        Enabled any user to contact and access the courses using PHP/MySQL framework.</p>
-                    <div class="container">
-                        <div class="row" style="margin-top: 7rem;">
-                            <div class="col-lg-3"></div>
-                            <div class="col-lg-6 btn-single">
-                                <a href="https://github.com/omhujband/upstudy.git" class="btn btn-primary">Source Code</a>
+                    <!-- First carousel screen with 3 cards -->
+
+                    <!-- Second carousel screen with 2 cards -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <!-- Project 4 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card p-3 h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><span>Image Hiding App</span></h5>
+                                        <p class="card-text flex-grow-1">
+                                            A simple steganography-based desktop application that allows you to hide
+                                            (encode) and retrieve (decode) secret messages inside image files using the
+                                            Least Significant Bit (LSB) method.
+                                            Built with Tkinter for GUI and Pillow/NumPy for image processing.
+                                        </p>
+                                        <div class="mt-auto text-end">
+                                            <a href="https://github.com/omhujband/Image-hiding-app.git"
+                                                class="btn btn-primary" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-3"></div>
+
+                            <!-- Project 5 (Hidden on mobile) -->
+                            <div class="col-md-4 mb-4 d-none d-md-block">
+                                <div class="card p-3 h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title"><span>CountIT</span></h5>
+                                        <p class="card-text flex-grow-1">
+                                            CountIT is a modern, intuitive counter management application built with
+                                            Flutter.
+                                            Whether you're tracking daily habits, counting days since an important
+                                            event, or monitoring progress towards your goals, CountIT provides a
+                                            beautiful and efficient way to keep count of what matters to you.
+                                        </p>
+                                        <div class="mt-auto text-end">
+                                            <a href="https://github.com/omhujband/CountIT.git" class="btn btn-primary"
+                                                target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Second carousel screen with 2 cards -->
+
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
-            <div class="card" style="width: 22rem; height: 25rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>Todo List</span></h5>
-                    <p class="card-text">My Productivity App is a simple web application designed to help users stay
-                        organized. Features a To-Do List for task management and a Notepad for writing down quick notes.
-                        Offering a clean interface.</p>
-                    <div class="container">
-                        <div class="row" style="margin-top: 6rem;">
-                            <div class="col">
-                                <a href="https://omhujband.github.io/To-Do-List/" class="btn btn-primary">Live Preview</a>
-                            </div>
-                            <div class="col">
-                                <a href="https://github.com/omhujband/To-Do-List.git" class="btn btn-primary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- End Carousel -->
         </div>
     </div>
     <!-- Projects body ended-->
@@ -249,7 +328,7 @@
                         <textarea placeholder="Your Message" id="Message" class="textarea-field"></textarea>
                         <button type="submit" class="send-button" onclick="sendMail()">Send Message</button>
                     </div>
-                </form> 
+                </form>
             </div>
         </div>
     </div>

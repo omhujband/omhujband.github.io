@@ -483,7 +483,7 @@ hr {
     border: 2px solid #FFD700; /* Yellow border */
     margin: 0 auto;
     max-width: 1200px;
-    max-height: 450px;
+    max-height: 500px;
     position: relative; /* For absolute positioning of controls */
 }
 

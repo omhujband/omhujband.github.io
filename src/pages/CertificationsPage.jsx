@@ -34,7 +34,7 @@ const extendedCertifications = [
 
 export default function CertificationsPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen -mt-[110px]">
       <header className="mt-section-gap mb-16 max-w-3xl">
         <h1 className="font-hero-display-mobile md:font-hero-display text-hero-display-mobile md:text-hero-display text-zinc-text-primary mb-6 animate-fade-up">
           Certifications &amp;<br />Achievements
@@ -46,8 +46,8 @@ export default function CertificationsPage() {
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-section-gap">
         {extendedCertifications.map((cert, index) => (
-          <article 
-            key={cert.id} 
+          <article
+            key={cert.id}
             className="cert-card glass-panel rounded-xl p-6 relative overflow-hidden interactive-element group flex flex-col h-full animate-fade-up"
             style={{ animationDelay: `${index * 100}ms` }}
           >
@@ -73,7 +73,7 @@ export default function CertificationsPage() {
         ))}
 
         {/* Placeholder for Future Certification */}
-        <article 
+        <article
           className="cert-card glass-panel rounded-xl p-6 relative overflow-hidden interactive-element group flex flex-col h-full border-dashed border-2 opacity-60 animate-fade-up"
           style={{ animationDelay: `${extendedCertifications.length * 100}ms` }}
         >

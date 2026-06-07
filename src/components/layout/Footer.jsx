@@ -4,9 +4,10 @@ export default function Footer() {
   return (
     <footer className="w-full px-6 py-10 md:px-12 flex flex-col md:flex-row items-center justify-between border-t border-zinc-border bg-surface gap-8">
       <div className="flex flex-col items-center md:items-start gap-1">
-        <span className="font-label-mono text-label-mono text-primary">Thoughtful Engineer</span>
+        {/* <span className="font-label-mono text-label-mono text-primary">Thoughtful Engineer</span> */}
+        <span className="font-label-mono text-label-mono text-primary">Built with discipline and systems thinking.</span>
         <span className="font-body-md text-zinc-text-secondary text-xs mt-1">
-          © {new Date().getFullYear()} Built with discipline and systems thinking.
+          © {new Date().getFullYear()} All rights reserved.
         </span>
       </div>
 

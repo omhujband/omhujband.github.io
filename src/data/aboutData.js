@@ -2,7 +2,7 @@ export const aboutData = {
   header: {
     title: "Systematic Curiosity.",
     subtitle: "Hi, I'm OM",
-    description: "I am a software engineering student dedicated to understanding the underlying mechanics of complex systems. My approach merges rigorous academic theory with hands-on, experimental development—building tools that are as thoughtful in their architecture as they are in their interface.",
+    description: "I am a Computer engineering student dedicated to understanding the underlying mechanics of complex systems. My approach merges rigorous academic theory with hands-on, experimental development—building tools that are as thoughtful in their architecture as they are in their interface.",
     tags: ["SYSTEMS_ARCHITECTURE", "FULL_STACK_DEV", "DATA_STRUCTURES"]
   },
   education: {

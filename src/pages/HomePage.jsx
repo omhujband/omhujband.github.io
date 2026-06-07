@@ -37,15 +37,14 @@ function HeroSection() {
 function FeaturedProjects() {
   return (
     <section className="animate-fade-up delay-100" id="projects">
-      <div className="flex items-end justify-between mb-12 border-b border-zinc-border pb-4">
+      <div className="flex items-end justify-between ">
         <div>
-          <h2 className="font-headline-lg text-headline-lg text-primary">// 01. FEATURED WORK</h2>
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-6">// 01. FEATURED WORK</h2>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-8">
         {homeData.featuredWork.map((project) => (
           <div key={project.id} className="bg-zinc-surface border border-zinc-border p-8 rounded-xl glow-hover transition-all group relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none"></div>
             <div className="flex flex-col md:flex-row gap-8">
               <div className="w-full md:w-1/3 flex flex-col justify-between">
                 <div>
@@ -91,12 +90,6 @@ function InterestsSection() {
           const colSpanClass = interest.cols === 1 ? '' : interest.cols === 2 ? 'md:col-span-2' : 'md:col-span-3';
           return (
             <div key={interest.id} className={`bg-zinc-surface border border-zinc-border rounded-xl p-6 relative overflow-hidden flex flex-col justify-end group glow-hover ${colSpanClass}`}>
-              {index === 0 && (
-                <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary via-surface to-surface"></div>
-              )}
-              {index === 1 && (
-                <div className="absolute inset-0 opacity-5 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px]"></div>
-              )}
               <span className="material-symbols-outlined text-primary mb-auto text-[32px]">{interest.icon}</span>
               <h4 className="font-headline-md text-headline-md text-zinc-text-primary">{interest.title}</h4>
               <p className="font-label-mono text-label-mono text-zinc-text-secondary mt-2">{interest.description}</p>
@@ -125,7 +118,7 @@ function ContactSection() {
 
   return (
     <section className="animate-fade-up delay-300 py-12 flex justify-center mt-section-gap mb-16" id="contact">
-      <div className="bg-zinc-surface border border-zinc-border w-full max-w-2xl rounded-xl p-10 flex flex-col items-center text-center relative overflow-hidden">
+      <div className="bg-gradient-to-bl from-zinc-800 to-zinc-950 border border-zinc-border w-full max-w-2xl rounded-xl p-10 flex flex-col items-center text-center relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
         <h3 className="font-headline-lg text-headline-lg text-zinc-text-primary mb-4">{homeData.contact.title}</h3>
         <h4 className="font-headline-md text-headline-md text-primary mb-8">{homeData.contact.subtitle}</h4>

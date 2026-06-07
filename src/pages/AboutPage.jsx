@@ -2,23 +2,23 @@ import { aboutData } from '../data/aboutData';
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-section-gap">
+    <div className="flex flex-col gap-section-gap -mt-11">
       {/* Intro Section */}
       <section className="pt-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
           <div className="md:col-span-7 flex flex-col justify-center">
-            <h1 className="font-hero-display-mobile text-hero-display-mobile md:font-hero-display md:text-hero-display text-zinc-text-primary mb-6">
+            <h1 className="font-hero-display-mobile text-hero-display-mobile md:font-hero-display md:text-hero-display text-zinc-text-primary mb-6 animate-fade-up">
               {aboutData.header.title}
             </h1>
-            <div className="mb-6">
+            <div className="mb-6 animate-fade-up delay-100">
               <span className="font-label-mono text-headline-md text-primary uppercase tracking-widest">
                 {aboutData.header.subtitle}
               </span>
             </div>
-            <p className="font-body-lg text-body-lg text-zinc-text-secondary max-w-2xl mb-8">
+            <p className="font-body-lg text-body-lg text-zinc-text-secondary max-w-2xl mb-8 animate-fade-up delay-200">
               {aboutData.header.description}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
               {aboutData.header.tags.map(tag => (
                 <span key={tag} className="font-label-mono text-label-mono text-primary border border-zinc-border px-3 py-1 rounded hover-target interactive-element hover:bg-surface-variant/30 transition-colors">
                   {tag}
@@ -26,10 +26,10 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          <div className="md:col-span-5 flex items-center justify-center mt-12 md:mt-0">
+          <div className="md:col-span-5 flex items-center justify-center mt-12 md:mt-0 animate-fade-up delay-100">
             <div className="w-[250px] h-[250px] rounded-full border border-primary-container shadow-[0_0_30px_rgba(96,165,250,0.4)] bg-zinc-surface/50 relative overflow-hidden flex items-center justify-center">
               <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "linear-gradient(rgba(161, 161, 170, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(161, 161, 170, 0.2) 1px, transparent 1px)", backgroundSize: "12px 12px" }}></div>
-              <span className="material-symbols-outlined text-primary/40 text-[48px]">person</span>
+              <img src="/profile-photo.png" alt="Om Hujband" className="w-full h-full object-cover relative z-10" />
             </div>
           </div>
         </div>
@@ -39,7 +39,6 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
         {/* Education Card */}
         <div className="glass-panel md:col-span-8 p-8 rounded-lg relative overflow-hidden group animate-fade-up">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
           <h2 className="font-label-mono text-label-mono text-zinc-text-secondary uppercase tracking-widest mb-6 flex items-center gap-2">
             <span className="material-symbols-outlined text-primary text-[16px]">school</span> Education
           </h2>
@@ -100,7 +99,7 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {aboutData.skills.map(skillGroup => (
-              <div key={skillGroup.category} className="border border-zinc-border rounded p-4 bg-zinc-surface/50 hover:bg-zinc-surface transition-colors hover-target">
+              <div key={skillGroup.category} className="bg-zinc-surface border border-zinc-border rounded-lg p-6 hover-target transition-all hover:bg-surface-variant/20">
                 <h4 className="font-label-mono text-label-mono text-zinc-text-primary mb-3">{skillGroup.category}</h4>
                 <ul className="font-body-md text-body-md text-zinc-text-secondary space-y-1">
                   {skillGroup.items.map(item => (

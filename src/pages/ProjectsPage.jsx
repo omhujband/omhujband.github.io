@@ -56,6 +56,37 @@ export default function ProjectsPage() {
           </article>
         ))}
       </div>
+
+      {/* Project Summary CTA */}
+      <section className="mb-section-gap animate-fade-up flex flex-col items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl mb-12">
+          {/* Card 1 */}
+          <div className="glass-panel rounded-xl border border-primary/20 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-surface-variant/20 glow-hover hover-target">
+            <h3 className="font-hero-display-mobile text-hero-display-mobile text-zinc-text-primary mb-2">5</h3>
+            <p className="font-label-mono text-label-mono text-zinc-text-secondary uppercase tracking-widest">Featured Projects</p>
+          </div>
+          {/* Card 2 */}
+          <div className="glass-panel rounded-xl border border-primary/20 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-surface-variant/20 glow-hover hover-target">
+            <h3 className="font-hero-display-mobile text-hero-display-mobile text-zinc-text-primary mb-2">20+</h3>
+            <p className="font-label-mono text-label-mono text-zinc-text-secondary uppercase tracking-widest">Experiments</p>
+          </div>
+          {/* Card 3 */}
+          <div className="glass-panel rounded-xl border border-primary/20 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-surface-variant/20 glow-hover hover-target">
+            <h3 className="font-hero-display-mobile text-hero-display-mobile text-zinc-text-primary mb-2">∞</h3>
+            <p className="font-label-mono text-label-mono text-zinc-text-secondary uppercase tracking-widest">Always Building</p>
+          </div>
+        </div>
+        
+        <a 
+          href="https://github.com/omhujband" 
+          target="_blank" 
+          rel="noreferrer"
+          className="bg-primary text-on-primary font-label-mono text-label-mono px-8 py-4 rounded flex items-center gap-3 hover:bg-primary-fixed transition-colors hover-target group"
+        >
+          See Everything I've Built
+          <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
     </div>
   );
 }

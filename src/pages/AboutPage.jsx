@@ -99,7 +99,7 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {aboutData.skills.map(skillGroup => (
-              <div key={skillGroup.category} className="bg-zinc-surface border border-zinc-border rounded-lg p-6 hover-target transition-all hover:bg-surface-variant/20">
+              <div key={skillGroup.category} className="bg-zinc-surface border border-zinc-border rounded-lg p-6 hover-target transition-all hover:border-primary/50 glow-hover">
                 <h4 className="font-label-mono text-label-mono text-zinc-text-primary mb-3">{skillGroup.category}</h4>
                 <ul className="font-body-md text-body-md text-zinc-text-secondary space-y-1">
                   {skillGroup.items.map(item => (

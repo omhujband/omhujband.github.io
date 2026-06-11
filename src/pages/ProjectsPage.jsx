@@ -76,10 +76,10 @@ export default function ProjectsPage() {
             <p className="font-label-mono text-label-mono text-zinc-text-secondary uppercase tracking-widest">Always Building</p>
           </div>
         </div>
-        
-        <a 
-          href="https://github.com/omhujband" 
-          target="_blank" 
+
+        <a
+          href="https://github.com/omhujband?tab=repositories"
+          target="_blank"
           rel="noreferrer"
           className="bg-primary text-on-primary font-label-mono text-label-mono px-8 py-4 rounded flex items-center gap-3 hover:bg-primary-fixed transition-colors hover-target group"
         >

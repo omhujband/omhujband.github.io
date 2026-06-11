@@ -5,34 +5,24 @@ import { Link } from 'react-router-dom';
 // The HTML page has some more details for certifications. Let's create a local data structure for it.
 const extendedCertifications = [
   {
-    id: "aws-dev",
-    title: "AWS Certified Developer",
-    organization: "Amazon Web Services",
-    date: "MAR 2023",
-    description: "Validates the ability to write and deploy cloud-based applications, understanding of core AWS services, uses, and basic AWS architecture best practices.",
-    tags: ["Cloud Architecture", "Serverless"],
+    id: "python-dev",
+    title: "Python Developer",
+    organization: "Sololearn",
+    date: "JUN 2026",
+    description: "Demonstrates the ability to design, develop, and maintain scalable Python applications while applying object-oriented programming, testing, and code optimization techniques.",
+    tags: ["Python"],
     icon: "open_in_new",
-    url: "https://placeholder-cert-url-aws.com/preview"
+    url: "https://drive.google.com/file/d/1lPAG2srstGZO-tyKD_94ObVyXoXUs6j7/preview"
   },
   {
     id: "cka",
-    title: "CKA: Kubernetes Administrator",
-    organization: "Cloud Native Computing Foundation",
-    date: "NOV 2022",
-    description: "Demonstrates the skills, knowledge, and competency to perform the responsibilities of Kubernetes administrators, including installation, configuration, and management of production-grade clusters.",
-    tags: ["Container Orchestration", "DevOps"],
+    title: "MSBTE Technical Quiz",
+    organization: "Maharashtra State Board Of Technical Education",
+    date: "FEB 2024",
+    description: "Demonstrates strong technical knowledge, analytical reasoning, and problem-solving competency across engineering and technology domains, validated through achieving Second Place in the MSBTE Technical Quiz Competition.",
+    tags: ["2nd Rank", "Technical Quiz", "MSBTE"],
     icon: "open_in_new",
-    url: "https://placeholder-cert-url-cka.com/preview"
-  },
-  {
-    id: "tf",
-    title: "TensorFlow Developer Certificate",
-    organization: "Google / TensorFlow",
-    date: "SEP 2021",
-    description: "Validates foundational capability in solving deep learning and ML problems, building image recognition, NLP models, and time series forecasting using TensorFlow.",
-    tags: ["Machine Learning", "Neural Networks"],
-    icon: "open_in_new",
-    url: "https://placeholder-cert-url-tf.com/preview"
+    url: "https://drive.google.com/file/d/1rEIOuAeAalxW5vIl5Txk7RlfUH3VdukB/preview"
   }
 ];
 
@@ -90,7 +80,7 @@ export default function CertificationsPage() {
             </div>
             <h3 className="font-headline-md text-headline-md text-zinc-text-secondary mb-1">In Progress</h3>
             <p className="font-body-md text-body-md text-on-surface-variant">
-              Currently studying for Advanced Security Practitioner validation.
+              Currently studying something to improve myself.<br />Or doing something to prove myself.<br />Or... Idk. Something.
             </p>
           </div>
         </article>

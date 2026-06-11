@@ -24,15 +24,13 @@ export default function TopNavBar() {
           <Link className={getLinkClasses('/about')} to="/about">About</Link>
           <Link className={getLinkClasses('/projects')} to="/projects">Projects</Link>
           <Link className={getLinkClasses('/certifications')} to="/certifications">Certifications</Link>
-          <a 
-            href="/resume.pdf" 
-            target="_blank" 
-            rel="noreferrer"
+          <Link 
+            to="/document?url=https://placeholder-resume-url.com/preview"
             className="ml-2 px-4 py-1.5 bg-surface-variant/30 border border-zinc-border/50 text-on-surface hover:bg-surface-variant/50 hover:border-primary/50 transition-all font-label-mono text-label-mono rounded-full hover-target flex items-center gap-2"
           >
             <span className="material-symbols-outlined text-[14px]">description</span>
             Resume
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

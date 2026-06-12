@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import { projectsData } from '../data/projectsData';
+import ProjectDossierModal from '../components/ui/ProjectDossierModal';
 
 export default function ProjectsPage() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenDossier = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseDossier = () => {
+    setSelectedProject(null);
+  };
   return (
     <div className="flex flex-col -mt-[110px]">
       {/* Header Section */}
@@ -21,8 +32,13 @@ export default function ProjectsPage() {
             className={`bg-zinc-surface border border-zinc-border rounded-lg p-8 flex flex-col gap-6 card-glow transition-all duration-300 hover-target relative overflow-hidden group animate-fade-up ${project.featured ? 'md:col-span-2' : ''}`}
             style={{ animationDelay: `${(index + 2) * 100}ms` }}
           >
-            {/* Decorative Corner */}
-            <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-zinc-border opacity-50 group-hover:border-primary transition-colors"></div>
+            {/* Open Dossier Action */}
+            <button 
+              onClick={() => handleOpenDossier(project)}
+              className="absolute top-6 right-6 font-label-mono text-[10px] text-zinc-text-secondary uppercase tracking-widest flex items-center gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 hover:text-primary transition-all duration-300 hover-target z-10"
+            >
+              Open Dossier <span className="material-symbols-outlined text-[14px] md:group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
 
             <header>
               <h2 className="font-headline-md text-headline-md text-on-surface mb-2">{project.title}</h2>
@@ -87,6 +103,13 @@ export default function ProjectsPage() {
           <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
         </a>
       </section>
+
+      {/* Dossier Modal */}
+      <ProjectDossierModal 
+        isOpen={!!selectedProject} 
+        onClose={handleCloseDossier} 
+        project={selectedProject || projectsData[0]} 
+      />
     </div>
   );
 }

@@ -44,7 +44,7 @@ export const aboutData = {
     },
     {
       category: "Backend",
-      items: ["Node.js", "MySql", "Firebase", "Xampp (Basic)"]
+      items: ["MySql", "Firebase", "Node.js (Basic)", "Xampp (Basic)"]
     },
     {
       category: "Areas of Interest",

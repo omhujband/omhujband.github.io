@@ -1,30 +1,48 @@
 export const projectsData = [
   {
-    id: "autonomous-drone",
-    title: "Autonomous Drone Navigation",
-    subtitle: "A low-latency visual SLAM implementation for indoor environments.",
-    problem: "Navigating complex, GPS-denied warehouses required a system capable of real-time mapping and obstacle avoidance with strictly limited edge compute resources.",
-    approach: "Implemented a custom C++ ROS node utilizing ORB-SLAM3, heavily optimized for an Nvidia Jetson Nano, prioritizing critical path execution.",
-    result: "Achieved 30fps localization accuracy within 5cm, reducing collision incidents by 94% in simulated environments.",
-    tags: ["C++", "ROS", "Computer Vision"]
+    id: "thinkmate",
+    title: "ThinkMate",
+    subtitle: "Offline AI study companion powered by local document understanding.",
+    problem: "Students rely on cloud-based AI tools that require internet access and expose study materials to third-party services, making private and offline learning difficult.",
+    approach: "Built an entirely on-device AI learning system combining local PDF indexing, retrieval-augmented document grounding, speech-to-text, text-to-speech, and LLM inference without requiring external APIs..",
+    result: "Created a privacy-first study companion capable of generating explanations, quizzes, and voice-based interactions directly from uploaded learning materials while operating completely offline.",
+    tags: ["Flutter", "AI", "RAG", "On-device ML"]
   },
   {
-    id: "distributed-kv",
-    title: "Distributed Key-Value Store",
-    subtitle: "A highly available, partition-tolerant database built from scratch.",
-    problem: "Existing solutions were too heavyweight for a specific micro-services cluster that required rapid read times and high fault tolerance across erratic network conditions.",
-    approach: "Developed in Go using the Raft consensus algorithm for leader election and log replication, coupled with an LSM-tree storage engine.",
-    result: "Demonstrated 99.9% uptime during chaotic network partitioning tests, sustaining 10k reads/sec with sub-millisecond latency.",
-    tags: ["Go", "Distributed Systems", "Raft"]
+    id: "aeronav",
+    title: "AeroNav",
+    subtitle: "Touchless Android navigation using real-time hand gestures.",
+    problem: "Modern smartphones depend almost entirely on touch input, limiting accessibility and preventing seamless interaction when physical contact is inconvenient.",
+    approach: "Developed a real-time computer vision pipeline that tracks hand landmarks through the device camera and translates gestures into cursor movement, clicks, scrolling, and navigation actions.",
+    result: "Produced a fully functional touchless navigation system that enables users to interact with Android applications using only hand movements and gestures.",
+    tags: ["Computer Vision", "Kotlin", "Android", "HCL"]
   },
   {
-    id: "trading-engine",
-    title: "Low-Latency Trading Engine",
-    subtitle: "An experimental matching engine designed for minimal jitter.",
-    problem: "Standard garbage-collected languages introduced unpredictable pauses, disrupting order execution critical for high-frequency strategies.",
-    approach: "Built entirely in Rust to guarantee memory safety without GC overhead. Utilized lock-free data structures and kernel bypass networking (DPDK).",
-    result: "Consistently processed limit orders with a median latency of 12 microseconds, eliminating latency spikes above 50 microseconds entirely.",
-    tags: ["Rust", "Networking", "Concurrency"],
-    featured: true // To span 2 cols like in HTML
+    id: "zerotrace",
+    title: "ZeroTrace",
+    subtitle: "Privacy-focused secure file destruction for Android devices.",
+    problem: "Standard file deletion removes references to data but often leaves recoverable information on storage media, creating privacy and security risks.",
+    approach: "Implemented multiple secure overwrite strategies, including cryptographically secure random passes and DoD-inspired multi-pass wiping, using Flutter, Kotlin platform channels, and low-level filesystem operations.",
+    result: "Built an offline-first utility capable of permanently destroying sensitive files while generating verifiable PDF certificates documenting wipe operations and integrity metadata.",
+    tags: ["Flutter", "Kotlin", "Security", "File Shredding", "File Systems"]
+  },
+  {
+    id: "pollpulse",
+    title: "PollPulse",
+    subtitle: "Real-time polling platform for audience engagement and live feedback.",
+    problem: "Traditional polling systems often lack instant synchronization, making it difficult to collect and visualize live audience feedback during events, classrooms, or discussions.",
+    approach: "Built a Firebase-powered polling platform using Provider-based state management, real-time Firestore synchronization, authentication workflows, and live chart-based visualizations.",
+    result: "Delivered a cross-platform polling experience enabling users to create, share, manage, and monitor live polls with real-time result updates and administrative controls.",
+    tags: ["Flutter", "Firebase", "Realtime system", "State Management"]
+  },
+  {
+    id: "solar-folio",
+    title: "Solar-folio",
+    subtitle: "Interactive 3D portfolio presented as an explorable solar system.",
+    problem: "Most portfolios are static collections of information that fail to communicate personality, curiosity, or the journey behind professional growth.",
+    approach: "Designed a narrative-driven 3D experience using React, Three.js, React Three Fiber, and GSAP, transforming portfolio sections into navigable celestial bodies within a simulated solar system.",
+    result: "Created an immersive portfolio experience that blends technical execution, scientific visualization, and storytelling while encouraging exploration rather than passive browsing.",
+    tags: ["React", "Three.js", "3D Graphics", "Creative Engineering"],
+    featured: true
   }
 ];
